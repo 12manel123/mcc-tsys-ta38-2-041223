@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+<div class="col-md-4 mb-4">
+    @for (cliente of clientes; track $index) {
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Mensaje de {{ cliente.name }} ({{ cliente.email }})</h5>
+              <p class="card-text">{{ cliente.msg }}</p>
+            </div>
+          </div>}
+        </div>
+      </div>
+    </div>
+
